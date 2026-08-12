@@ -1,0 +1,24 @@
+# This repository is a build output. In normal use the only untracked files
+# here are test-runner droppings from someone running the suites — but this is
+# also the repo autobuild itself runs in, so guard against a stray run or a
+# dropped credential reaching a public tree.
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.DS_Store
+
+# autobuild's run state and agent worktrees, plus per-project settings.
+# .claude/settings.local.json routinely holds machine-specific paths.
+# (Does not match .claude-plugin/, which is tracked.)
+.claude/
+
+# Never publishable.
+.env
+.env.*
+*.key
+*.pem
+.venv/
+node_modules/
+*.log

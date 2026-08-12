@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "session-lifecycle",
+  "version": "0.1.0",
+  "description": "Close a session properly. `distill` captures corrections and decisions from the transcript into the right durable surface and enforces a budget on every always-loaded file. `docker-sweep` finds the Docker assets this session created and will never reuse, and reports them with a narrow reclaim command. `close-session` discloses anything still running, writes the closing summary, and files the thread as finished.",
+  "author": {
+    "name": "jonbond5",
+    "url": "https://github.com/jonbond5"
+  },
+  "homepage": "https://github.com/jonbond5/claude-code-skills",
+  "repository": "https://github.com/jonbond5/claude-code-skills",
+  "license": "MIT",
+  "keywords": ["session", "cleanup", "docker", "memory", "documentation"]
+}

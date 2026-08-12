@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "autobuild",
+  "version": "0.1.0",
+  "description": "Autonomous build pipeline. Takes a feature ask and drives it to verified, committed code without intermediate approvals: scopes units, builds them in isolated worktrees, runs standing verify lenses, and terminates only when an independent judge says the original ask is satisfied.",
+  "author": {
+    "name": "jonbond5",
+    "url": "https://github.com/jonbond5"
+  },
+  "homepage": "https://github.com/jonbond5/claude-code-skills",
+  "repository": "https://github.com/jonbond5/claude-code-skills",
+  "license": "MIT",
+  "keywords": ["build", "automation", "worktree", "verification", "agents"]
+}

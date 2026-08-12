@@ -1,0 +1,14 @@
+{
+  "$schema": "https://anthropic.com/claude-code/plugin.schema.json",
+  "name": "agent-waits",
+  "version": "0.1.0",
+  "description": "Make an agent wait without burning tokens. `sleep-gate` bridges a bounded wait — a rate-limit window, a long external job — by capturing durable resume state, sleeping in the background, and resuming from a breadcrumb. `constantly-monitor` sets up a recurring wake loop driven by cron, so a wake lost to a quota window is picked up by the next fire instead of dying silently.",
+  "author": {
+    "name": "jonbond5",
+    "url": "https://github.com/jonbond5"
+  },
+  "homepage": "https://github.com/jonbond5/claude-code-skills",
+  "repository": "https://github.com/jonbond5/claude-code-skills",
+  "license": "MIT",
+  "keywords": ["monitoring", "scheduling", "rate-limit", "cron", "background"]
+}

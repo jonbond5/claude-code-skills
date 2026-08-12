@@ -1,0 +1,29 @@
+{
+  "$schema": "https://anthropic.com/claude-code/marketplace.schema.json",
+  "name": "claude-code-skills",
+  "owner": {
+    "name": "jonbond5",
+    "url": "https://github.com/jonbond5"
+  },
+  "metadata": {
+    "description": "Claude Code plugins for autonomous building, session lifecycle, and agent waiting. Every guard ships with a negative test.",
+    "version": "0.1.0"
+  },
+  "plugins": [
+    {
+      "name": "autobuild",
+      "source": "./plugins/autobuild",
+      "description": "Build a feature end to end without intermediate approvals: scope into units, build each in an isolated worktree, verify with standing lenses, and terminate on an independent judge's verdict against the original ask. Bundles `design`, which hardens a discussion into a build-ready handoff."
+    },
+    {
+      "name": "session-lifecycle",
+      "source": "./plugins/session-lifecycle",
+      "description": "Close a session properly: distill what was learned into durable rules, sweep the Docker assets the session created, and file the thread as finished."
+    },
+    {
+      "name": "agent-waits",
+      "source": "./plugins/agent-waits",
+      "description": "Make an agent wait without burning tokens — a bounded sleep across a rate-limit window, or a recurring self-healing wake loop that survives one."
+    }
+  ]
+}
