@@ -1,5 +1,8 @@
 # claude-code-skills
 
+_Note_: **This repo is human-designed, 100% AI developed**. 
+For my thoughts on the methodology and why this project matters, please review the Github page associated with this repo. This repo will be actively maintained (sentiment CAO August 2026).
+
 Three Claude Code plugins built around one idea: **an agent that checks its own work has to be
 able to watch the check fail.**
 
